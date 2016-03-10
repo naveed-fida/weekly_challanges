@@ -17,7 +17,7 @@ class CircularBuffer
   end
 
   def write(item)
-    return nil unless item
+    return nil if item.nil?
     raise BufferFullException if full?
     @buffer << item
   end
@@ -28,7 +28,7 @@ class CircularBuffer
 
   def write!(item)
     if full?
-      return nil unless item
+      return nil if item.nil?
       read
     end
     write(item)
