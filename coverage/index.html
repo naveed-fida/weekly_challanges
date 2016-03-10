@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-03-10T12:48:26-08:00">2016-03-10T12:48:26-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-03-10T13:11:33-08:00">2016-03-10T13:11:33-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.8
+         1.7
        </span>
     </span> hits/line)
   </h2>
@@ -53,11 +53,11 @@
       <tr>
         <td class="strong"><a href="#a6ff3b5d95e031d54257f0ed44361994257406bf" class="src_link" title="grade_school/grade_school.rb">grade_school/grade_school.rb</a></td>
         <td class="yellow strong">89.47 %</td>
-        <td>32</td>
+        <td>34</td>
         <td>19</td>
         <td>17</td>
         <td>2</td>
-        <td>1.8</td>
+        <td>1.7</td>
       </tr>
       
     </tbody>
@@ -171,13 +171,13 @@
         <li class="covered" data-hits="4" data-linenumber="14">
           <span class="hits">4</span>
           
-          <code class="ruby">    sorted_by_grade = @students.sort_by {|grd, names| grd}</code>
+          <code class="ruby">    @students.values.each {|students| students.sort!}</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="15">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="4" data-linenumber="15">
+          <span class="hits">4</span>
           
-          <code class="ruby">    sorted_by_grade.each { |grd, names| names.sort! }.each {|grd, name| sorted[grd] = name}</code>
+          <code class="ruby">    @students.sort.each {|grd, name| sorted[grd] = name}</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
@@ -228,55 +228,67 @@
           <code class="ruby">end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">school = School.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">[</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  [&#39;Jennifer&#39;, 4], [&#39;Kareem&#39;, 6],</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">  [&#39;Christopher&#39;, 4], [&#39;Kyle&#39;, 3]</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
-          <code class="ruby">].each do |name, grade|</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="29">
-          <span class="hits">4</span>
-          
-          <code class="ruby">  school.add(name, grade)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">school = School.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">[</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  [&#39;Jennifer&#39;, 4], [&#39;Kareem&#39;, 6],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  [&#39;Christopher&#39;, 4], [&#39;Kyle&#39;, 3]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">].each do |name, grade|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="31">
+          <span class="hits">4</span>
+          
+          <code class="ruby">  school.add(name, grade)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
           <code class="ruby">school.to_h</code>
