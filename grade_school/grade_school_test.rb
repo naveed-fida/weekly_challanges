@@ -18,7 +18,6 @@ class SchoolTest < Minitest::Test
   end
 
   def test_add_student
-    skip
     school.add('Aimee', 2)
     assert_equal({ 2 => ['Aimee'] }, school.to_h)
   end

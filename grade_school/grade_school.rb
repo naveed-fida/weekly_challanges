@@ -3,6 +3,10 @@ class School
     @students = {}
   end
 
+  def add(student, idx)
+    @students[idx] ||= []
+    @students[idx] << student
+  end
 
   def to_h
     @students
