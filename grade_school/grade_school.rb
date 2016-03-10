@@ -1,4 +1,4 @@
-class GradeSchool
+class School
   def initialize
     @students = {}
   end
