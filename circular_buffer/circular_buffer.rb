@@ -41,7 +41,3 @@ class CircularBuffer
   end
 end
 
-buffer = CircularBuffer.new(2)
-buffer.write(1)
-buffer.write(2)
-buffer.write! nil
