@@ -1,0 +1,33 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/home/nf/launch_school/weekly_challanges/grade_school/grade_school.rb": [
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1457902552
+  }
+}

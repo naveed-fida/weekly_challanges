@@ -22,13 +22,3 @@ class School
   end
 end
 
-school = School.new
-
-[
-  ['Jennifer', 4], ['Kareem', 6],
-  ['Christopher', 4], ['Kyle', 3]
-].each do |name, grade|
-  school.add(name, grade)
-end
-
-school.to_h

@@ -6,7 +6,7 @@ class Translation
                    UAG: 'STOP', UGA: 'STOP' }
 
   def self.of_codon(codon)
-    raise InvalidCodonError unless TRANSLATIONS.keys.include?(codon.to_sym)
+    fail InvalidCodonError unless TRANSLATIONS.keys.include?(codon.to_sym)
     TRANSLATIONS[codon.to_sym]
   end
 

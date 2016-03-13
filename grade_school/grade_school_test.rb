@@ -1,8 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
-require 'simplecov'
 Minitest::Reporters.use!
-SimpleCov.start
 
 require_relative 'grade_school'
 
